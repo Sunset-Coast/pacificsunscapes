@@ -23,7 +23,7 @@ html {
   font-size: 14px;
   overflow-x: hidden;
   overflow-y: auto;
-
+  width: 100%;
 
 }
 
@@ -35,13 +35,13 @@ html {
 }
 
 body {
-   height: 100%;
+    height: 100%;
     font-family: var(--ps-font-family-main);
     color: var(--ps-dark-color);
     width: 100%;
+    overflow-x: hidden;
+    display: block;
   
-
-
 }
 main{
     flex: 1 0 auto;  
@@ -50,33 +50,35 @@ main{
 }
 
 
-
 footer{
+    display: flex;
+    position: absolute;
+}
+.content{
     background-color: var(--ps-text-color-light);
-    font-size: 2rem;
+    font-size: 1rem;
     color: var(--ps-text-color-dark);
-   
-  display: flex;
-  height: 100%;
+    width: 100%;
+
   margin: auto;
   align-items: center;
   flex-shrink: 0;
-  flex-grow: 1;
+
 
 
   
  
 }
-
+/*
 .content {
-    font-size: 1.5rem;
+    font-size: 1rem;
  
     padding-bottom: 3rem;
     position: relative;
     display: inline-flex;
   align-content: space-around;
   
-}
+}*/
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: 500;
