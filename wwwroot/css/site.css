@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --ps-primary-color: #EC6630;
+    --ps-primary-shadow-color: #F18432;
+    --ps-secondary-shadow-color: #215725;
+    --ps-secondary-color: #439A49;
+    --ps-highlight-color: #F6A233;
+    --ps-dark-color: #070B04;
+    --ps-light-brown: #805B38;
+
+    --ps-text-color-light: #ffffff;
+    --ps-text-color-dark: #000000;
+
+    --ps-font-family-main: 'Lora', serif;
+}
+
+html {
+  font-size: 14px;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+   
+  }
+}
+
+body {
+   height: 100%;
+    font-family: var(--ps-font-family-main);
+    color: var(--ps-dark-color);
+    width: 100%;
+  
+
+
+}
+main{
+    flex: 1 0 auto;  
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+footer{
+    background-color: var(--ps-text-color-light);
+    font-size: 2rem;
+    color: var(--ps-text-color-dark);
+   
+  display: flex;
+  height: 100%;
+  margin: auto;
+  align-items: center;
+  flex-shrink: 0;
+  flex-grow: 1;
+
+
+  
+ 
+}
+
+.content {
+    font-size: 1.5rem;
+ 
+    padding-bottom: 3rem;
+    position: relative;
+    display: inline-flex;
+  align-content: space-around;
+  
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+}
+
+h2{
+    background-color: var(--ps-primary-color);
+    color: var(--ps-text-color-light);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    letter-spacing: .09rem;
+}
+
+.wrap{
+    margin: auto;
+    text-align: center;
+    max-width: 450px;
+}
+
+a {
+    color: var(--ps-text-color-light);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--ps-highlight-color);
+}
+
+nav{
+    font-size: 1.2rem;
+  
+    align-items: flex-end;
+    display: flex;
+    width: 100%;
+    font-weight: 700;
+    justify-items: center;    
+    justify-content: space-around !important;
+}
+
+.navbar>.container-fluid {
+    flex-wrap: nowrap;
+}
+
+
+
+.contact-header{
+   display:none;
+}
+
+
+
+
+
+.hero-banner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/img/Landscape-Design-Techniques.jpg');
+    background-size: cover;
+    background-position: center;
+
+    
+    animation: changeHeroImage 10s infinite;
+}
+
+@keyframes changeHeroImage {
+    0% {
+        background-image: url('https://img.freepik.com/premium-photo/flowerbed-with-yellow-red-flowers-landscape-design-colorful-flowers_116317-6183.jpg?w=2000');
+    }
+
+    33.33% {
+        background-image: url('/img/Landscape-Design-Techniques.jpg');
+    }
+
+    66.67% {
+        background-image: url('https://img.freepik.com/premium-photo/flowerbed-with-yellow-red-flowers-landscape-design-colorful-flowers_116317-6183.jpg?w=2000');
+    }
+
+    100% {
+        background-image: url('/img/Landscape-Design-Techniques.jpg');
+    }
+}
+
+ 
+
+.overlay{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.overlay-content{
+  
+    flex: 1 1 auto;
+    color: white;
+    z-index: 200;
+    height: 500px;
+    flex-wrap: wrap;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+   
+}
+
+.overlay-content>h1, .overlay-content>p{
+   padding: 2rem;
+   text-align: center; 
+   font-size: 3rem;
+}
