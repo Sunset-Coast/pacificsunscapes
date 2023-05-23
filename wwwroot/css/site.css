@@ -98,6 +98,19 @@ h2{
     max-width: 450px;
 }
 
+.btn{
+    background-color: var(--ps-secondary-shadow-color);
+    color: var(--ps-text-color-light);
+    border-radius: 10px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1.2rem;
+}
+
+.btn:hover{
+    background-color: var(--ps-primary-shadow-color);
+}
+
 a {
     color: var(--ps-text-color-light);
     text-decoration: none;
@@ -109,7 +122,7 @@ a:hover {
 
 nav{
     font-size: 1.2rem;
-  
+  background-color: var(--ps-text-color-light);
     align-items: flex-end;
     display: flex;
     width: 100%;
@@ -195,4 +208,73 @@ nav{
    padding: 2rem;
    text-align: center; 
    font-size: 3rem;
+}
+
+
+.about-content-color{
+    background-color: var(--ps-primary-color);
+    color: var(--ps-text-color-light);
+    padding-bottom: 2rem;
+}
+
+.about-content h2{
+    background-color: var(--ps-text-color-light);
+    color: var(--ps-primary-color);
+    font-size: 2rem;
+    
+}
+
+.quote {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+.contact-content {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+.contact-content h2{
+    background-color: var(--ps-text-color-light);
+    color: var(--ps-primary-color);
+}
+
+i{
+    color: var(--ps-primary-color);
+    font-size: 3rem;
+    text-align: center;
+}
+
+
+.copyright{
+    font-size: .67rem;
+    padding-bottom: 1rem;
+    color: var(--ps-text-color-dark);
+}
+
+.offcanvas {
+ 
+ 
+
+    width: 400px !important;
+    height: 400px !important;
+ 
+}
+
+.offcanvas-backdrop.show{
+    opacity: 0;
+}
+
+.offcanvas.offcanvas-end {
+ 
 }
