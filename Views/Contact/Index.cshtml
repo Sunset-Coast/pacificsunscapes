@@ -7,9 +7,10 @@
 
         <div class="container overlay">
             <div class="overlay-content">
-
+             
                 <h1>Contact Us</h1>
-                <p>Lorem ipsum rit gunvi gont.</p>
+                    <p>Lorem ipsum rit gunvi gont.</p>
+              
 
             </div>
         </div>
@@ -37,6 +38,61 @@
             </div>
         </div>
 
+
+     <div class="contact-form">
+         <form id="contactForm" action="" method="POST">
+             <div>
+                 <label for="firstName" class="form-label">First Name:</label>
+                 <input id="firstName" type="text" name="firstName" class="form-control" required />
+             </div>
+                <div>
+                    <label for="lastName" class="form-label">Last Name:</label>
+                    <input class="form-control" id="lastName" type="text" name="lasttName" required />
+                </div>
+                  <div>
+                    <label for="firstName" class="form-label">Email:</label>
+                    <input class="form-control"  id="email" type="email" name="email" required />
+                </div>
+                <div>
+                    <label for="phoneNumber" class="form-label">Phone Number:</label>
+                    <input class="form-control" id="phoneNumber" type="tel" name="phoneNumber" />
+                </div>
+                <div>
+                    <label for="address" class="form-label">Address:</label>
+                    <input class="form-control" id="address" type="text" name="address" />
+                </div>
+              
+                <div>
+                    <label for="city" class="form-label">City:</label>
+                    <input class="form-control" id="city" type="text" name="city" />
+                </div>
+                <div>
+                    <label for="zipcode" class="form-label">Zipcode:</label>
+                    <input class="form-control" id="zipcode" type="text" name="zipcode" />
+                </div>
+                <div>
+                    <label class="form-label" for="formDropdown">How did you hear about us?</label>
+                    <select class="form-select" id="formDropdown" name="formDropdown" required>
+                        <option value="blank"></option>
+                        <option value="google">Google</option>
+                        <option value="bing">Bing</option>
+                        <option value="billboard">Billboard</option>
+                        <option value="sign">Lawn sign</option>
+                        <option value="friend">A friend</option>
+                        <option value="newspaper">Newspaper</option>
+
+
+
+                    </select>
+                </div>
+                <div>
+                    <label for="formMessage" class="form-label">How can we help?</label>
+                    <textarea id="formMessage" class="form-control" rows="4" cols="30" name="formMessage" required></textarea>
+                </div>
+
+                <input class="btn mt-2" type="submit" value="submit" />
+         </form>
+     </div>
 
         <div class="wrap">
             <div class="contact-content">

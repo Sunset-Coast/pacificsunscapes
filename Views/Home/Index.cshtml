@@ -22,9 +22,16 @@
 
 <div class="wrap ">
     <h2>Transforming Outdoor Spaces into Stunning Landscapes</h2>
+    <div class="row row-wrap">
+        <div class="col-12 col-lg-8">
     <p>At GreenScapes Landscaping, we specialize in creating breathtaking outdoor environments that enhance the beauty and functionality of your property. With our expert team of landscape architects and skilled craftsmen, we bring your vision to life, turning ordinary spaces into extraordinary landscapes.</p>
-</div>
+                </div>
+                <div class="col-lg-4">
+                    <img src="https://img.freepik.com/premium-photo/flowerbed-with-yellow-red-flowers-landscape-design-colorful-flowers_116317-6183.jpg?w=2000" alt="Landscape Photo" class="img-fluid col-photo" />
+                </div>
+            </div>
 
+        </div>
 <div class="wrap">
     <h2>Why Pacific?</h2>
     <p><strong>Landscape Design:</strong> Our experienced designers work closely with you to understand your preferences and create a custom landscape design that reflects your style and enhances your property's features. We integrate elements such as plants, hardscapes, water features, and lighting to achieve a harmonious and inviting outdoor space.</p>
@@ -39,4 +46,60 @@
             <img src="/img/Landscape-Design-Techniques.jpg" alt="Landscape Photo" class="img-fluid mb-1">
     </div>
     </div>
+
+    <h3 class="mt-3 mb-3">Get In Touch</h3>
+        <div class="contact-form">
+            <form id="contactForm" action="" method="POST">
+                <div>
+                    <label for="firstName" class="form-label">First Name:</label>
+                    <input id="firstName" type="text" name="firstName" class="form-control" required />
+                </div>
+                <div>
+                    <label for="lastName" class="form-label">Last Name:</label>
+                    <input class="form-control" id="lastName" type="text" name="lasttName" required />
+                </div>
+                <div>
+                    <label for="firstName" class="form-label">Email:</label>
+                    <input class="form-control" id="email" type="email" name="email" required />
+                </div>
+                <div>
+                    <label for="phoneNumber" class="form-label">Phone Number:</label>
+                    <input class="form-control" id="phoneNumber" type="tel" name="phoneNumber" />
+                </div>
+                <div>
+                    <label for="address" class="form-label">Address:</label>
+                    <input class="form-control" id="address" type="text" name="address" />
+                </div>
+
+                <div>
+                    <label for="city" class="form-label">City:</label>
+                    <input class="form-control" id="city" type="text" name="city" />
+                </div>
+                <div>
+                    <label for="zipcode" class="form-label">Zipcode:</label>
+                    <input class="form-control" id="zipcode" type="text" name="zipcode" />
+                </div>
+                <div>
+                    <label class="form-label" for="formDropdown">How did you hear about us?</label>
+                    <select class="form-select" id="formDropdown" name="formDropdown" required>
+                        <option value="blank"></option>
+                        <option value="google">Google</option>
+                        <option value="bing">Bing</option>
+                        <option value="billboard">Billboard</option>
+                        <option value="sign">Lawn sign</option>
+                        <option value="friend">A friend</option>
+                        <option value="newspaper">Newspaper</option>
+
+
+
+                    </select>
+                </div>
+                <div>
+                    <label for="formMessage" class="form-label">How can we help?</label>
+                    <textarea id="formMessage" class="form-control" rows="4" cols="30" name="formMessage" required></textarea>
+                </div>
+
+                <input class="btn mt-2" type="submit" value="submit" />
+            </form>
+        </div>
 </section>
