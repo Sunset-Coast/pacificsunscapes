@@ -22,17 +22,17 @@
 <body>
     <header>
         <div class="contact-header">
-       <div class="row p-2">
-           <div class="col-4">
+            <div class="row p-2">
+                <div class="col-4">
                     <a class="nav-link text-dark" asp-area="" asp-controller="About" asp-action="Index">Location</a>
-           </div>
+                </div>
                 <div class="col-4">
                     <a class="nav-link text-dark" asp-area="" asp-controller="About" asp-action="Index">000-000-0000</a>
                 </div>
                 <div class="col-4">
                     <a class="nav-link text-dark" asp-area="" asp-controller="About" asp-action="Index">000-000-0000</a>
-           </div>
-       </div>
+                </div>
+            </div>
         </div>
         <nav class="navbar navbar-expand-lg  fixed-top">
             <div class="container-fluid">
@@ -65,88 +65,158 @@
                                 <a class="nav-link " asp-area="" asp-controller="Contact" asp-action="Index">Contact Us</a>
                             </li>
                         </ul>
-                     
+
                     </div>
                 </div>
             </div>
         </nav>
-  @*      <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-translucent border-bottom box-shadow">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
-                    <img src="https://lirp.cdn-website.com/c731753ca9f741da980d87301471461f/dms3rep/multi/opt/pacific+sunscapes+logo+only-1920w.png" class="img-fluid h-25 w-25"/>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                    
-                    
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="About" asp-action="Index">About Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Services" asp-action="Index">Our Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Portfolio" asp-action="Index">Our Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Resources" asp-action="Index">Resources</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Contact" asp-action="Index">Contact Us</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+        @*      <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-translucent border-bottom box-shadow">
+        <div class="container-fluid">
+        <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+        <img src="https://lirp.cdn-website.com/c731753ca9f741da980d87301471461f/dms3rep/multi/opt/pacific+sunscapes+logo+only-1920w.png" class="img-fluid h-25 w-25"/>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+        <ul class="navbar-nav flex-grow-1">
+
+
+        <li class="nav-item">
+        <a class="nav-link text-dark" asp-area="" asp-controller="About" asp-action="Index">About Us</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link text-dark" asp-area="" asp-controller="Services" asp-action="Index">Our Services</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link text-dark" asp-area="" asp-controller="Portfolio" asp-action="Index">Our Portfolio</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link text-dark" asp-area="" asp-controller="Resources" asp-action="Index">Resources</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link text-dark" asp-area="" asp-controller="Contact" asp-action="Index">Contact Us</a>
+        </li>
+        </ul>
+        </div>
+        </div>
         </nav>
-*@
+        *@
 
         @RenderSection("Header", required: false)
     </header>
-    <div >
+    <div>
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top">
-       
-            <div class="content row row-cols-1">
-                <div class="col-12 col-md-4 text-center text-md-start ">
-               Contact Us<hr/>
-               <p>Phone: (619) 820-8064</p>
-               <p>Email: info@PacificSunscapesWebsite.com</p>
+ @*   <footer class="border-top">
+        <div class="row-cols-1">
+        <div class="row">
+            <div class="col-12 col-md-4 col-lg-4 text-center text-md-start footer-contact">
+                <h3>Contact</h3><hr />
+                <div class="">
+                    <i class="bi bi-telephone-fill"></i><p class="footer-phone"> (619) 820-8064</p>
+                    <a href="mailto:info@PacificSunscapesWebsite.com"><i class="bi bi-envelope-fill"></i> </a><p>info@PacificSunscapesWebsite.com</p>
                 </div>
-                <div class="col-12 col-md-4 text-center">
-               Our Services <hr/>
-               <p>Lawn Care</p>
-                <p>Lawn Care</p>
-                  <p>Lawn Care</p>
-                <p>Lawn Care</p>
-                </div>  <div class="col-12 col-md-4 text-center text-md-end mb-5 ">
-                  Follow Us On Social Media <hr/>
-             <div class="row">
-                 <div class="col-4">
-                        <a href="#" target="_blank" title="Follow on Facebook">  <i class="bi bi-facebook"></i></a>
-                 </div>
-                  <div class="col-4">
-                        <a href="#" target="_blank" title="Follow on Facebook">  <i class="bi bi-linkedin"></i></a>
-                 </div>
-                    <div class="col-4">
-                        <a href="#" target="_blank" title="Follow on Facebook">  <i class="bi bi-youtube"></i></a>
-                    </div>
-             </div>
-
-                </div> 
-                <div class="d-flex justify-content-center mb-5">
-                <img src="https://lirp.cdn-website.com/c731753ca9f741da980d87301471461f/dms3rep/multi/opt/pacific+sunscapes+logo+only-1920w.png" class="img-fluid w-50 " />
             </div>
-            <div class="copyright"> <span>;&copy;</span>Sunset Coast Partner 2023</div>
+            <div class="col-12 col-md-4 col-lg-4 text-center">
+                <h3 class="mt-1">Our Services</h3> <hr />
+                <ul>
+                    <li class="me-4">
+                        Lawn Care
+                    </li>
+                    <li class="me-4">
+                        Lawn Care
+                    </li>
+                    <li class="me-4">
+                        Lawn Care
+                    </li>
+                    <li class="me-4">
+                        Lawn Care
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-4 col-lg-4 text-center text-md-end mb-5 footer-contact">
+                <h3>Follow Us On Social Media </h3> <hr />
+                <div class="row socials">
+                    <div class="col-4 ">
+                        <a href="#" target="_blank" title="Follow on Facebook">  <i class="bi bi-facebook "></i></a>
+                    </div>
+                    <div class="col-4">
+                        <a href="#" target="_blank" title="Follow on Facebook">  <i class="bi bi-linkedin "></i></a>
+                    </div>
+                    <div class="col-4">
+                        <a href="#" target="_blank" title="Follow on Facebook">  <i class="bi bi-youtube "></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div class="col-12">
+                <img src="https://lirp.cdn-website.com/c731753ca9f741da980d87301471461f/dms3rep/multi/opt/pacific+sunscapes+logo+only-1920w.png" class="img-fluid w-50 mb-5 " />
+            </div>
+            <div class="col-12"> <div class="copyright mb-5"> <span>;&copy;</span>Sunset Coast Partner 2023</div></div>
+            </div>
+        </div>
+       
+
+    </footer>*@
+
+    <footer class="border-top">
+        <div class="row">
+            <div class="col-12 col-md-4 col-lg-4 text-center text-md-start footer-contact">
+                Contact<hr />
+                <div class="">
+                    <i class="bi bi-telephone-fill"></i><p class="footer-phone"> (619) 820-8064</p>
+                    <a href="mailto:info@PacificSunscapesWebsite.com"><i class="bi bi-envelope-fill"></i> </a><p>info@PacificSunscapesWebsite.com</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-4 text-center mt-3">
+              Our Services <hr />
+                <ul>
+                    <li class="me-4">
+                        Lawn Care
+                    </li>
+                    <li class="me-4">
+                        Lawn Care
+                    </li>
+                    <li class="me-4">
+                        Lawn Care
+                    </li>
+                    <li class="me-4">
+                        Lawn Care
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-4 col-lg-4 text-center text-md-end footer-contact">
+               Follow Us On Social Media  <hr />
+                <div class="row socials">
+                    <div class="col-4 ">
+                        <a href="#" target="_blank" title="Follow on Facebook">  <i class="bi bi-facebook "></i></a>
+                    </div>
+                    <div class="col-4">
+                        <a href="#" target="_blank" title="Follow on LinkedIn">  <i class="bi bi-linkedin "></i></a>
+                    </div>
+                    <div class="col-4">
+                        <a href="#" target="_blank" title="Follow on YouTube">  <i class="bi bi-youtube "></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 d-flex justify-content-center">
+                <img src="https://lirp.cdn-website.com/c731753ca9f741da980d87301471461f/dms3rep/multi/opt/pacific+sunscapes+logo+only-1920w.png" class="img-fluid w-50 mb-5" />
+            </div>
+            <div class="col-12 text-center">
+                <div class="mb-5">
+                    <span>&copy;</span>Sunset Coast Partner 2023
+                </div>
+            </div>
         </div>
     </footer>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

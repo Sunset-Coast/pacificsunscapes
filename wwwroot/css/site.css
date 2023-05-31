@@ -53,6 +53,7 @@ main{
 footer{
     display: flex;
     position: absolute;
+    height: 100%;
 }
 
 form input {
@@ -83,7 +84,7 @@ form input {
     color: var(--ps-text-color-dark);
     width: 100%;
 
-  margin: auto;
+
   align-items: center;
   flex-shrink: 0;
 
@@ -172,6 +173,21 @@ nav{
 }
 
 
+.fade-in {
+    opacity: 0;
+    transition: opacity 1.5s ease-in;
+}
+
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
 
 
 
@@ -332,7 +348,30 @@ i{
     height: 50%;
 }
 
+ul{
+    list-style: none;
+}
 
+
+footer .row{
+    margin: 0;
+}
+
+.footer-contact{
+    background-color: var(--ps-primary-color);
+    color: var(--ps-text-color-light);
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+.footer-contact i{
+    color: var(--ps-text-color-light);
+    font-size: 1.2rem;
+}
+.socials i{
+    font-size: 2.5rem;
+    justify-content: center;
+}
 /* Media Queries*/
 
 
@@ -382,4 +421,26 @@ i{
             padding-bottom: 2rem;
             padding-top: 1rem;
         }
+
+    footer .row {
+        justify-content: center;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    .footer-contact {
+        background-color: var(--ps-text-color-light);
+        color: var(--ps-text-color-dark);
+      width: auto;
+          
+        padding: 1rem;
+    }
+
+        .footer-contact i {
+            color: var(--ps-primary-color);
+
+        }
+    .footer-contact img{
+        width: 50%;
+        height: 50%
+    }
 }
