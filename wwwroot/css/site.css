@@ -169,9 +169,53 @@ nav{
 
 
 .contact-header{
-   display:none;
+  
+   position: relative;
+  background-color: transparent;
+
+   top: 0;
+  height: 120px;
+   z-index: 2000;
+}
+.header-col-1{
+    background-color: var(--ps-primary-color);  
+    border-right: 2px solid var(--ps-highlight-color);
+}
+.header-col-2{
+    background-color: var(--ps-primary-shadow-color);
+  
+  
 }
 
+.contact-header > .row{
+    height: 120px;
+}
+
+.bi::before, [class^="bi-"]::before, [class*=" bi-"]::before{
+    display: flex;
+    justify-content: center;
+}
+
+.header-icon {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 100%;
+    padding: 3rem;
+}
+
+.header-icon .bi-envelope-fill {
+    width: 100%;
+   color: #fff;
+   font-size: 4rem;
+}
+
+    .header-icon .bi-telephone-fill {
+        width: 100%;
+        color: #fff;
+        font-size:4rem;
+       
+    }
 
 .fade-in {
     opacity: 0;

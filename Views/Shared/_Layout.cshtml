@@ -21,20 +21,22 @@
 </head>
 <body>
     <header>
-        <div class="contact-header">
-            <div class="row p-2">
-                <div class="col-4">
-                    <a class="nav-link text-dark" asp-area="" asp-controller="About" asp-action="Index">Location</a>
+        <div class="contact-header ">
+            <div class="row align-content-center ">
+                <div class="col-6 header-col-1">
+                    <div class="header-icon telephone">
+                      <a class="bi bi-telephone-fill" asp-area="" asp-controller="About" asp-action="Index"></a>
+                    </div>
                 </div>
-                <div class="col-4">
-                    <a class="nav-link text-dark" asp-area="" asp-controller="About" asp-action="Index">000-000-0000</a>
+                <div class="col-6 header-col-2">
+                    <div class="header-icon envelope">
+                         <a class="bi bi-envelope-fill" asp-area="" asp-controller="About" asp-action="Index"></a>
+                    </div>
                 </div>
-                <div class="col-4">
-                    <a class="nav-link text-dark" asp-area="" asp-controller="About" asp-action="Index">000-000-0000</a>
-                </div>
+              
             </div>
         </div>
-        <nav class="navbar navbar-expand-lg  fixed-top">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
                     <img src="https://lirp.cdn-website.com/c731753ca9f741da980d87301471461f/dms3rep/multi/opt/pacific+sunscapes+logo+only-1920w.png" class="img-fluid " />
