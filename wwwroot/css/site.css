@@ -676,14 +676,16 @@ font-size: 3.5rem;
 
 @media screen and (orientation: landscape) and (min-width: 992px){
     h1{
-        font-size: 6rem;
-    }
-    h1 p {
         font-size: 5rem;
     }
-    
+    h1 p {
+        font-size: 3.5rem;
+    }
+    .overlay{
+        top: 0;
+    }
     .hero-banner{
-        height: 85vh;
+        height: 95vh;
 
     }
     .hero-other{
@@ -798,33 +800,37 @@ font-size: 3.5rem;
         font-size: 1.5rem;
     }
     h1{
-        font-size: 8.2rem;
+        font-size: 6.2rem;
     }
+        h1 p {
+            font-size: 3.5rem;
+        }
+  
   #resources p{
   min-width: 1200px;
       margin-right: 1rem;
   }
         .overlay-content p {
-            font-size: 5.5rem;
+            font-size: 4.5rem;
         }
         .overlay-content > h1{
             font-size: 8.2rem;
         }
     h2{
-        font-size: 6rem;
+        font-size: 4rem;
     }
     .quote h3{
         font-size: 2rem;
         padding-bottom: 1rem;
     }
     .hero-banner{
-        height: 90vh;
+        height: 100vh;
     }
     .hero-other{
         height: 40vh
     }
     .overlay{
-        top: 15%;
+        top: 0;
         
     }
     .nav-link{
