@@ -504,10 +504,17 @@ footer .row{
     }
 }
 
-@media (min-width: 400px){
-    h1{
-        font-size: 4.5rem;
+@media (min-width: 389px){
+    .hero-other{
+        height: 15vh;
     }
+    h1 {
+        font-size: 3.5rem;
+    }
+}
+
+@media (min-width: 400px){
+  
     .overlay-content{
 font-size: 3.5rem;
     }
@@ -529,7 +536,11 @@ font-size: 3.5rem;
     }
 }
 
-
+@media(min-width: 539px){
+    .hero-other{
+        height: 20vh;
+    }
+}
 
 
 
@@ -538,26 +549,76 @@ font-size: 3.5rem;
     .hero-banner{
         height: 55vh;
     }
+    .hero-other{
+        height: 20vh;
+    }
+    .hero-other h1{
+        font-size: 5rem;
+    }
     .wrap {
         margin: auto;
         text-align: center;
         max-width: 100%;
     }
 
-    .row-wrap h2 {
+   
+    .overlay{
+        top: 10%;
+    }
+ 
+
+    .quote{
+        margin-left: 32%;
+        margin-right: 32%;
+    }
+    .contact-content > .quote{
+       margin-left: 1rem;
+       margin-right: 1rem;
+    }
+    .row-
+    wrap h2 {
         padding-left: 5rem;
         padding-right: 5rem;
     }
-
-    .row-wrap p {
-     
+    footer{
+        background-color: var(--ps-primary-color);
+        color: var(--ps-text-color-light);
     }
+    .footer-contact{
+     width: 33.3%;
+ 
+    }
+    .footer-contact p{
+        font-size: 1.2rem;
+    }
+    footer .row {
+        justify-content: center;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .footer-contact {
+     
+        font-size: 1.2rem;
+     
+    
+    }
+
+    .footer-contact i {
+    
+        font-size: 3rem;
+    }
+    
+
+
+
 
     .col-photo {
    
-        padding-bottom: 2rem;
-        padding-top: 1rem;
+      padding-right: 1rem;
+      padding-left: 1rem;
     }
+
 }
 
 @media (min-width: 992px){
@@ -582,28 +643,17 @@ font-size: 3.5rem;
             padding-bottom: 2rem;
             padding-top: 1rem;
         }
+        footer{
+            display: block;
+        }
 
-    footer .row {
+/*    footer .row {
         justify-content: center;
         font-size: 1.2rem;
         text-align: center;
-    }
-    .footer-contact {
-        background-color: var(--ps-text-color-light);
-        color: var(--ps-text-color-dark);
-      width: auto;
-          
-        padding: 1rem;
-    }
+    }*/
+   
 
-        .footer-contact i {
-            color: var(--ps-primary-color);
-
-        }
-    .footer-contact img{
-        width: 50%;
-        height: 50%
-    }
 }
 
 @media screen and (orientation:landscape) and (min-width: 739px) {
