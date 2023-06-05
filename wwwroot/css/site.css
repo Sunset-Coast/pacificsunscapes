@@ -792,7 +792,7 @@ font-size: 3.5rem;
         font-size: 1.7rem;
     }
     p{
-        min-width: 800px;
+        max-width: 1000px;
         padding-left: 2rem;
         padding-right: 3rem;
         font-size: 1.5rem;
@@ -800,9 +800,10 @@ font-size: 3.5rem;
     h1{
         font-size: 8.2rem;
     }
-    p{ 
-        max-width: 1000px;
-    }
+  #resources p{
+  min-width: 1200px;
+      margin-right: 1rem;
+  }
         .overlay-content p {
             font-size: 5.5rem;
         }
@@ -811,6 +812,10 @@ font-size: 3.5rem;
         }
     h2{
         font-size: 6rem;
+    }
+    .quote h3{
+        font-size: 2rem;
+        padding-bottom: 1rem;
     }
     .hero-banner{
         height: 90vh;
@@ -840,6 +845,14 @@ font-size: 3.5rem;
     .navbar-brand img{
         width: 100%;
         height: 100%;
+    }
+
+    .quote{
+      
+        margin-left: 35%;
+        margin-right: 35%;
+        padding-top: 2rem;
+      padding-bottom: 2rem;
     }
     .footer-contact{
         font-size: 1.5rem;
