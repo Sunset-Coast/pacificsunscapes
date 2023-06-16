@@ -39,6 +39,7 @@ body {
     width: 100%;
     overflow-x: hidden;
     display: block;
+    background-color: darkslategray;
   
 }
 main{
@@ -50,7 +51,7 @@ main{
 
 footer{
     display: flex;
-    position: absolute;
+    /*position: absolute;*/
    
 }
 
@@ -78,6 +79,9 @@ form input {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     margin-left: 1rem;
     margin-right: 1rem;
+    background-color: lightslategrey;
+    display: inline-block;
+    float: right;
 }
 .form-label{
     margin-top: .5rem;
@@ -98,6 +102,48 @@ form input {
   
  
 }
+
+.carousel-item.active {
+    display: flex;
+}
+
+.carousel-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-p {
+    font-size: small;
+}
+
+/*.col-sm-6 mb-3 mb-sm-0 w-25 p-2 h-50 {
+    padding: 30px ;
+}*/
+
+#resources-wrap {
+    background-color: darkslategray;
+}
+
+#about-wrap {
+    background-color: darkslategray;
+}
+
+#services-wrap {
+    background-color: darkslategray;
+}
+
+#qoute {
+    background-color: lightslategray;
+}
+
+.row {
+    padding: 30px;
+}
+
+.col-sm-6 w-25 p-2 h-50 {
+    padding: 30px;
+}
 /*
 .content {
     font-size: 1rem;
@@ -108,8 +154,7 @@ form input {
   align-content: space-around;
   
 }*/
-
-h1{
+h1 {
     font-family: var(--ps-font-family-hero);
     font-weight: 500;
     font-size: 4rem;
@@ -138,10 +183,10 @@ main p{
     text-align: justify;
 }
 
-.wrap{
+.wrap {
     margin: auto;
     text-align: center;
- 
+    background-color: lightslategrey;
 }
 
 .wrap-color, .wrap-color h2 {
@@ -181,9 +226,9 @@ strong{
     letter-spacing: .1rem;
 }
 
-nav{
+nav {
     font-size: 1.1rem;
-  background-color: var(--ps-text-color-light);
+    background-color: lightslategray;
     align-items: flex-end;
     display: flex;
     width: 100%;
@@ -449,6 +494,23 @@ footer .row{
     font-size: 2.5rem;
     justify-content: center;
 }
+
+.port-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.card {
+    background-color: lightslategrey;
+}
+
+/*.row {
+    margin-left: 300px;
+}*/
+
 /* Media Queries*/
 
 @media (min-width: 270px){
@@ -872,4 +934,17 @@ font-size: 3.5rem;
         padding-left: 3rem;
         width: 100%;
     }
+}
+
+#img-fluid-1 {
+    max-width: 50%;
+}
+
+.header-col-2 {
+    background-color: transparent;
+}
+
+.header-col-1 {
+    background-color: transparent;
+    border-right: 0px;
 }
