@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using PacificSunscapesWebsite.Models;
+using PacificSunscapes3.Models;
 using System.Diagnostics;
 
-namespace PacificSunscapesWebsite.Controllers
+namespace PacificSunscapes3.Controllers
 {
     public class HomeController : Controller
     {

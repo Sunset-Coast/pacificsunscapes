@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace PacificSunscapesWebsite.Controllers
+namespace PacificSunscapes3.Controllers
 {
     public class ContactController : Controller
     {

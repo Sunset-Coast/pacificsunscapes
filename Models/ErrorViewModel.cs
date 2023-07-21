@@ -1,4 +1,4 @@
-namespace PacificSunscapesWebsite.Models
+namespace PacificSunscapes3.Models
 {
     public class ErrorViewModel
     {

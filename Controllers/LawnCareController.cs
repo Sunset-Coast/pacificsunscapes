@@ -2,7 +2,7 @@
 
 namespace PacificSunscapes3.Controllers
 {
-    public class AboutController : Controller
+    public class LawnCareController : Controller
     {
         public IActionResult Index()
         {
